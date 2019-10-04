@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 16px/1.5 Helvetica, Arial;
+      }
+      #bg {
+        background-image: url(../img/bg_coas.png);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #content {
+        padding: 150px 100px;
+      }
+      h1,
+      h2 {
+        color: #ddd;
+        font-size: 64px;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000;
+        margin: 0;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        background-color: rgba(221, 221, 221, 0.75);
+        padding: 20px;
+        border: 3px solid rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        text-align: justify;
+        text-justify: inter-word;
+      }
+    </style>
+    <title>Coas opdracht</title>
+  </head>
+  <body>
+    <div id="bg">
+      <div id="content">
+        <h1>Hello Lion</h1>
+        <br /><br /><br /><br /><br />
+        <h2 id="datum"></h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+          amet, vel deserunt dicta eaque iure eos earum? Corporis odio quis
+          molestiae rerum hic nihil, dolorem sapiente sequi commodi quasi!
+          Mollitia inventore architecto repellat unde. Vel earum unde mollitia
+          aliquid itaque voluptatum asperiores, minus possimus fugiat magnam
+          deserunt quos. Fugiat consectetur molestiae pariatur ea sunt sequi est
+          a optio adipisci eos? Iure, deleniti debitis minima accusamus, nobis
+          nulla sint vitae autem enim voluptates vero consequuntur repudiandae
+          aut earum corrupti amet molestias itaque blanditiis excepturi ducimus,
+          veritatis atque qui suscipit! Dolore magni tempore aliquid aperiam
+          minima, velit odio odit totam vero omnis?
+        </p>
+      </div>
+    </div>
+    <script>
+      var datum = new Date().toString();
+      datum = datum.split(' ');
+      document.getElementById('datum').innerHTML =
+        '[ ' +
+        datum[0] +
+        ' ' +
+        datum[1] +
+        ' ' +
+        datum[2] +
+        ' ' +
+        datum[3] +
+        ' ]';
+    </script>
+  </body>
+</html>
